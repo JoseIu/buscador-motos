@@ -80,18 +80,18 @@ body{
     background-color: rgba(253, 253, 253, 0);
     // outline: 1px solid #fff;
     box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
-    width: 22em;
+    width: 30em;
     padding: .5em;
     border-radius: .5em;
     @media screen and (max-width:1104px){
         width: 25em;
     }
-    @media screen and (max-width:852px){
-        width: 20em;
-    }
-    @media screen and (max-width:740px){
-        min-width: 20em;
-    }
+    // @media screen and (max-width:852px){
+    //     width: 20em;
+    // }
+    // @media screen and (max-width:740px){
+    //     min-width: 20em;
+    // }
     @media screen and (max-width:500px){
         width: 100%;
     }
@@ -134,6 +134,7 @@ body{
     }
     // CARD__BOTTOM
     &__bottom{
+        padding: .5em;
         display: none;
         // background-color:blueviolet;
     }

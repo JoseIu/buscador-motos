@@ -69,23 +69,13 @@ body {
 .card {
   background-color: rgba(253, 253, 253, 0);
   box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
-  width: 22em;
+  width: 30em;
   padding: 0.5em;
   border-radius: 0.5em;
 }
 @media screen and (max-width: 1104px) {
   .card {
     width: 25em;
-  }
-}
-@media screen and (max-width: 852px) {
-  .card {
-    width: 20em;
-  }
-}
-@media screen and (max-width: 740px) {
-  .card {
-    min-width: 20em;
   }
 }
 @media screen and (max-width: 500px) {
@@ -126,6 +116,7 @@ body {
   cursor: pointer;
 }
 .card__bottom {
+  padding: 0.5em;
   display: none;
 }
 .card__subtitle {
