@@ -1,0 +1,12 @@
+{
+  "name": "motos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "rm -rf ./dist/css/styles.css & sass --watch ./src/scss/styles.scss ./dist/css/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

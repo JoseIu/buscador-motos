@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/resset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="app.js"></script>
+    <script defer src="bd.js"></script>
+    <title>Motos</title>
+</head>
+<body>
+    <main>
+        <h1 class="title wrapper">Buscador de motos</h1>
+
+        <div class="buscador wrapper">
+            <form class="form" id="form">
+                <!-- MARCA -->
+                <div class="form__container">
+                    <laber class="form__label" for="marca">Marca</laber>
+                    <select class="form__select" id="marca">
+                        <option value="">Seleccione</option>
+                        <option value="bmw">BMW</option>
+                        <option value="kawasaki">Kawasaki</option>
+                        <option value="suzuki">Suzuki</option>
+                        <option value="honda">Honda</option>
+                    </select>
+                </div>
+                <!-- AÑO -->
+                <div class="form__container">
+                    <laber class="form__label" for="year">Año</laber>
+                    <select class="form__select" id="year">
+                        <option value="">Seleccione</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                    </select>
+                </div>
+                <!-- TIPO -->
+                <div class="form__container">
+                    <laber class="form__label" for="tipo">tipo</laber>
+                    <select class="form__select" id="tipo">
+                        <option value="">Seleccione</option>
+                        <option value="deportivo">Deportivo</option>
+                        <option value="naked">Naked</option>
+                        <option value="electrica">Eléctrica</option>
+                    </select>
+                </div>
+                <!-- CICLINDRAJE -->
+                <div class="form__container">
+                    <laber class="form__label" for="cilindraje">Cilindraje</laber>
+                    <select class="form__select" id="cilindraje">
+                        <option value="">Seleccione</option>
+                        <option value="300">300cc</option>
+                        <option value="400">600cc</option>
+                        <option value="600">600cc</option>
+                        <option value="1000">1000cc</option>
+                    </select>
+                </div>
+                <!-- Precio MIN -->
+                <div class="form__container">
+                    <laber class="form__label" for="minimo">Mimino</laber>
+                    <select class="form__select" id="minimo">
+                        <option value="">Seleccione</option>
+                        <option value="5.000">5.000</option>
+                        <option value="10.000">10.000</option>
+                        <option value="20.000">20.000</option>
+                        <option value="30.000">30.000</option>
+                        <option value="60.000">60.000</option>
+                    </select>
+                </div>
+                <!-- PRECIO MAX -->
+                <div class="form__container">
+                    <laber class="form__label" for="maximo">Maximo</laber>
+                    <select class="form__select" id="maximo">
+                        <option value="">Seleccione</option>
+                        <option value="5.000">5.000</option>
+                        <option value="10.000">10.000</option>
+                        <option value="20.000">20.000</option>
+                        <option value="30.000">30.000</option>
+                        <option value="60.000">60.000</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <section class="reultados wrapper">
+            <h2 class="reultados__title">Resultados</h2>
+
+            <div class="container">
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="card">
+                    <div class="card__top">
+                        <img class="card__img" src="../src/assets/images/deportivas/bmw/s100rr.jpg" alt="MOTO">
+                        <div class="card__content">
+                            <h2 class="card__title">BMW S1000R</h2>
+                            <ul class="card__ul">
+                                <li class="card__li">BMW S1000R</li>
+                                <li class="card__li">300cv</li>
+                                <li class="card__li">20.000 $</li>
+                            </ul>
+                            <button class="card__buttom" id="buttom"> + </button>
+                        </div>
+                    </div>
+
+                    <div class="card__bottom">
+                        <!-- Dimesiones -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- MOTOR -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">MOTOR</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- FRENOS -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">DIMENSIONES</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                        <!-- suspensión -->
+                        <div class="card__description">
+                            <h3 class="card__subtitle">SUSPESIÓN</h3>
+                            <ul class="card__list">
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                                <li class="card__item">Longitud total: 2.115 mm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

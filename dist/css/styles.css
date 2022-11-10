@@ -1,0 +1,139 @@
+body {
+  background-color: #333;
+  color: #fff;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  text-align: center;
+  padding: 0.5em;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.form {
+  padding: 1.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.3em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.651);
+  margin-bottom: 2em;
+}
+.form__container {
+  width: 10em;
+}
+@media screen and (max-width: 500px) {
+  .form__container {
+    width: 100%;
+  }
+}
+.form__select {
+  width: 100%;
+  padding: 0.3em;
+  border-radius: 0.5em;
+  border: 1px solid #fff;
+  background-color: #333;
+}
+
+.reultados {
+  width: 100%;
+}
+.reultados__title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0.2em;
+  }
+}
+
+.card {
+  background-color: rgba(253, 253, 253, 0);
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
+  width: 22em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+}
+@media screen and (max-width: 1104px) {
+  .card {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 852px) {
+  .card {
+    width: 20em;
+  }
+}
+@media screen and (max-width: 740px) {
+  .card {
+    min-width: 20em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}
+.card__top {
+  display: flex;
+  column-gap: 1em;
+  margin-bottom: 1em;
+}
+.card__img {
+  width: 60%;
+}
+.card__content {
+  position: relative;
+}
+@media screen and (max-width: 500px) {
+  .card__content {
+    width: 50%;
+  }
+}
+.card__title {
+  margin-bottom: 0.4em;
+  font-weight: bold;
+}
+.card__ul {
+  margin-bottom: 2em;
+}
+.card__li {
+  font-size: 0.8rem;
+}
+.card__buttom {
+  font-size: 1.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  cursor: pointer;
+}
+.card__bottom {
+  display: none;
+}
+.card__subtitle {
+  font-weight: bold;
+  margin-bottom: 0.4em;
+}
+.card__item {
+  padding-left: 1em;
+}
+
+/*# sourceMappingURL=styles.css.map */
