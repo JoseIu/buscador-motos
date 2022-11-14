@@ -7,7 +7,7 @@ const motos = [
         año:2023,
         tipo:'deportiva',
         clindraje:125,
-        precio:4.565,
+        precio:4565,
         // More info
         // DIMENSIONES
         longitudTotal: '1,975 mm',
@@ -38,7 +38,7 @@ const motos = [
         año:1999 ,
         tipo:'deportiva',
         clindraje:1340,
-        precio:19.995 ,
+        precio:19995,
         // More info
         // DIMENSIONES
         longitudTotal: '2.180 mm',
@@ -69,7 +69,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:645,
-        precio:7.115  ,
+        precio:7115,
         // More info
         // DIMENSIONES
         longitudTotal: '2.180 mm',
@@ -100,7 +100,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:645,
-        precio:7.915,
+        precio:7915,
         // More info
         // DIMENSIONES
         longitudTotal: '2.140 mm',
@@ -131,7 +131,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:999,
-        precio:14.315,
+        precio:14315,
         // More info
         // DIMENSIONES
         longitudTotal: '2.115 mm',
@@ -162,7 +162,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:125,
-        precio:4.115,
+        precio:4115,
         // More info
         // DIMENSIONES
         longitudTotal: '2.000 mm',
@@ -193,7 +193,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:999,
-        precio:16.315,
+        precio:16315,
         // More info
         // DIMENSIONES
         longitudTotal: '2.125 mm',
@@ -224,7 +224,7 @@ const motos = [
         año:2023 ,
         tipo:'naked',
         clindraje:999,
-        precio:10.995,
+        precio:10995,
         // More info
         // DIMENSIONES
         longitudTotal: '2115 mm',
@@ -255,7 +255,7 @@ const motos = [
         año:2015 ,
         tipo:'deportiva',
         clindraje:999,
-        precio:16.015,
+        precio:16015,
         // More info
         // DIMENSIONES
         longitudTotal: '2140 mm',
@@ -287,7 +287,7 @@ const motos = [
         año:2010,
         tipo:'deportiva',
         clindraje:998,
-        precio:32.399,
+        precio:32399,
         // More info
         // DIMENSIONES
         longitudTotal: '2.085 mm',
@@ -318,7 +318,7 @@ const motos = [
         año:2017,
         tipo:'deportiva',
         clindraje:998,
-        precio:21.350,
+        precio:21350,
         // More info
         // DIMENSIONES
         longitudTotal: '2.085 mm',
@@ -349,7 +349,7 @@ const motos = [
         año:2012,
         tipo:'deportiva',
         clindraje:649,
-        precio:8.199,
+        precio:8199,
         // More info
         // DIMENSIONES
         longitudTotal: '2.055 mm',
@@ -380,7 +380,7 @@ const motos = [
         año:2017,
         tipo:'deportiva',
         clindraje:399,
-        precio:6.999,
+        precio:6999,
         // More info
         // DIMENSIONES
         longitudTotal: '1.990 mm',
@@ -411,7 +411,7 @@ const motos = [
         año:2022,
         tipo:'deportiva',
         clindraje:998,
-        precio:55.500,
+        precio:55500,
         // More info
         // DIMENSIONES
         longitudTotal: '2.070 mm',
@@ -437,13 +437,44 @@ const motos = [
     // BMW SIUUUUUUUUUUUUUUUU
     {
         // Simple description 4
-        marca:'kawasaki', //Ninja Z400
-        modelo:'Ninja Z400',
+        marca:'bmw', //Ninja Z400
+        modelo:'BMW S1000rr',
         image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
         año:2017,
         tipo:'deportiva',
         clindraje:399,
-        precio:6.999,
+        precio:6999,
+        // More info
+        // DIMENSIONES
+        longitudTotal: '1.990 mm',
+        ancho: '710 mm',
+        altura: '1.120 mm',
+        alturaSuelo: '140 mm',
+        alturaAsiento: '785 mm',
+        peso: '168 kg',
+        // Motor
+        motor:'Refrigeración líquida, 4 tiempos, bicilíndrico en paralelo',
+        potencia:'45 CV (33,4Kw)',
+        transmision:' 6 velocidades',
+        capacidadCombustible:'14 Litros',
+        arraque:'Eléctrico',
+        consumo:'?',
+        // Frenos
+        frenoDelantero:'Disco lobulado de 310 mm. Pinza: Doble pistón',
+        frenoTrasero:'Disco lobulado de 220 mm. Pinza: pistón doble',
+        // Suspensión
+        suspensionDelantero:'Horquilla telescópica de 41 mm',
+        suspensionTrasero:'Sistema Uni-Trak con suspensión de gas y precarga ajustable',
+    },
+    {
+        // Simple description 4
+        marca:'bmw', //Ninja Z400
+        modelo:'BMW S1000rr',
+        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        año:2017,
+        tipo:'deportiva',
+        clindraje:399,
+        precio:6999,
         // More info
         // DIMENSIONES
         longitudTotal: '1.990 mm',

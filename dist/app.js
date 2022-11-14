@@ -1,15 +1,93 @@
 //Variables
 const resultados = document.getElementById('resultados');
 
+const marca      = document.getElementById('marca');
+const year       = document.getElementById('year');
+const tipo       = document.getElementById('tipo');
+const cilindraje = document.getElementById('cilindraje');
+const minimo     = document.getElementById('minimo');
+const maximo     = document.getElementById('maximo');
 
 
-//Even tos
+//Eventos cuando se carge el contenido del HTML
 document.addEventListener('DOMContentLoaded',()=>{
-    mostrarMotos();//Muestra los coches al cargar, ponemos "e"  por litrar motos y no tener una funcionalidad inesperada
-
+    limpiarDOM();
+    mostrarMotos(motos);//Muestra los coches al cargar, ponemos "e"  por litrar motos y no tener una funcionalidad inesperada
+    
+    mostrar();
+    
+    
 });
 
-function mostrarMotos (){
+function mostrar(){
+    const btn        = document.querySelectorAll('.card__buttom');
+    const cardbot       = document.querySelectorAll('.card__bottom');
+    const container  = document.querySelectorAll('.card');
+    // console.log(btn);
+    // console.log(card);
+
+    btn.forEach( (buttom, i) =>{
+        btn[i].addEventListener('click',()=>{
+            console.log(btn[i]);
+            cardbot.forEach((cadaBloque, i)=>{
+                cardbot[i].classList.remove('card__bottom--active');
+                container[i].classList.remove('card--active');
+            })
+            cardbot[i].classList.add('card__bottom--active');
+            container[i].classList.add('card--active');
+        })
+    })
+}
+//Generar un objeto para la busqueda
+const busqueda = {
+   marca: '',
+   year: '' ,
+   tipo: '',
+   cilindraje: '',
+   minimo: '',
+   maximo:'',
+}
+
+//eventos par alos select de buqueda
+marca.addEventListener('change', e =>{
+    busqueda.marca = e.target.value;
+    // console.log(busqueda);
+    filtrarMoto();
+});
+
+year.addEventListener('change', e =>{
+    busqueda.year = parseInt(e.target.value);
+    // console.log(busqueda);
+    filtrarMoto();
+});
+
+tipo.addEventListener('change', e =>{
+    busqueda.tipo = e.target.value;
+    // console.log(busqueda);
+    filtrarMoto()
+});
+
+cilindraje.addEventListener('change', e =>{
+    busqueda.cilindraje = parseInt(e.target.value);
+    // console.log(busqueda);
+    filtrarMoto();
+});
+
+minimo.addEventListener('change', e =>{
+    busqueda.minimo = parseInt(e.target.value);
+    console.log(busqueda);
+    filtrarMoto();
+});
+maximo.addEventListener('change', e =>{
+    busqueda.maximo = parseInt(e.target.value);
+    // console.log(busqueda);
+    filtrarMoto();
+});
+
+
+
+function mostrarMotos (motos){
+    console.log(motos);
     const fragmentMotos = document.createDocumentFragment();
 
     motos.forEach( moto =>{
@@ -168,5 +246,80 @@ function mostrarMotos (){
     })
 
     resultados.append(fragmentMotos);
+}
 
+const limpiarDOM = ()=>{
+    while(resultados.firstChild){
+        resultados.removeChild(resultados.firstChild);
+    }
+}
+
+
+const filtrarMoto = ()=>{
+    mostrar()
+    const motosFiltrados = motos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarTipo).filter(filtrarCc).filter(filtrarMinimo).filter(filtrarMaximo);
+
+    //COMPROBAMOS SI HAY RESULTADO O NO
+    if(motosFiltrados.length){
+        mostrarMotos(motosFiltrados);
+    }else{
+        // noResultados(); //CREAR ESTA FUNCIÓN!!!
+    }
+    // console.log(motosFiltrados);
+}
+
+
+const filtrarMarca = (moto)=>{
+    const {marca} = busqueda;
+
+    if(marca){
+        return moto.marca === marca;
+    }
+
+    return moto;
+}
+const filtrarYear = (moto)=>{
+    const {year} = busqueda;
+
+    if(year){
+        return moto.año === year;//moto.año viene de la bd
+    }
+
+    return moto;
+}
+const filtrarTipo = (moto)=>{
+    const {tipo} = busqueda;
+
+    if(tipo){
+        return moto.tipo === tipo;
+    }
+
+    return moto;
+}
+const filtrarCc = (moto)=>{
+    const {cilindraje} = busqueda;
+
+    if(cilindraje){
+        return moto.clindraje === cilindraje;
+    }
+
+    return moto;
+}
+const filtrarMinimo = (moto)=>{
+    const {minimo} = busqueda;
+
+    if(minimo){
+        return moto.precio >= minimo;
+    }
+
+    return moto;
+}
+const filtrarMaximo = (moto)=>{
+    const {maximo} = busqueda;
+
+    if(maximo){
+        return moto.precio <= maximo;
+    }
+
+    return moto;
 }

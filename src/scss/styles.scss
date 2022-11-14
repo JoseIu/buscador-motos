@@ -76,22 +76,18 @@ body{
 }
 
 .card{
-    // background-color: lightpink;
-    background-color: rgba(253, 253, 253, 0);
-    // outline: 1px solid #fff;
-    box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
     width: 30em;
+    height: 12em;
     padding: .5em;
     border-radius: .5em;
+    color: #333;
+    // background-color: lightpink;
+    background-color: rgb(253, 253, 253);
+    
+    // box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
     @media screen and (max-width:1104px){
         width: 25em;
     }
-    // @media screen and (max-width:852px){
-    //     width: 20em;
-    // }
-    // @media screen and (max-width:740px){
-    //     min-width: 20em;
-    // }
     @media screen and (max-width:500px){
         width: 100%;
     }
@@ -99,7 +95,6 @@ body{
         // background-color: lightsalmon;
         display: flex;
         column-gap: 1em;
-        margin-bottom: 1em;
     }
     &__img{
         // background-color: lightgoldenrodyellow;
@@ -107,7 +102,7 @@ body{
     }
     &__content{
         // background-color: lightcoral;
-        position: relative;
+        // position: relative;
         @media screen and (max-width:500px){
             width: 50%;
         }
@@ -134,11 +129,18 @@ body{
     }
     // CARD__BOTTOM
     &__bottom{
-        padding: .5em;
-        display: none;
+        height: 0;
+        padding: 0em;
+        overflow: hidden;
         // background-color:blueviolet;
+        transition: all .5s ease;
+    }
+    &__bottom--active{
+        height: auto;
+        padding: 1em;
     }
     &__description{
+        margin-bottom: 1em;
         // background-color: lightblue;
     }
     &__subtitle{
@@ -154,4 +156,8 @@ body{
         padding-left: 1em;
     }
 
+}
+
+.card--active{
+    height: auto;
 }
