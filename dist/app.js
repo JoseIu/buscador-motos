@@ -11,7 +11,6 @@ const maximo     = document.getElementById('maximo');
 
 //Eventos cuando se carge el contenido del HTML
 document.addEventListener('DOMContentLoaded',()=>{
-    limpiarDOM();
     mostrarMotos(motos);//Muestra los coches al cargar, ponemos "e"  por litrar motos y no tener una funcionalidad inesperada
     
     mostrar();
@@ -64,7 +63,7 @@ year.addEventListener('change', e =>{
 tipo.addEventListener('change', e =>{
     busqueda.tipo = e.target.value;
     // console.log(busqueda);
-    filtrarMoto()
+    filtrarMoto();
 });
 
 cilindraje.addEventListener('change', e =>{
@@ -87,6 +86,7 @@ maximo.addEventListener('change', e =>{
 
 
 function mostrarMotos (motos){
+    limpiarDOM();
     console.log(motos);
     const fragmentMotos = document.createDocumentFragment();
 
@@ -124,7 +124,7 @@ function mostrarMotos (motos){
         cardUl.append(cardLi1,cardLi2,cardLi3);
         // cardContent.append(cardUl)
         
-        const cardButtom = document.createElement('buttom');
+        const cardButtom = document.createElement('button');
         cardButtom.textContent = '+';
         cardButtom.classList.add('card__buttom');
 
@@ -256,7 +256,6 @@ const limpiarDOM = ()=>{
 
 
 const filtrarMoto = ()=>{
-    mostrar()
     const motosFiltrados = motos.filter(filtrarMarca).filter(filtrarYear).filter(filtrarTipo).filter(filtrarCc).filter(filtrarMinimo).filter(filtrarMaximo);
 
     //COMPROBAMOS SI HAY RESULTADO O NO

@@ -3,7 +3,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //GSX-R125
         modelo:'GSX-R125',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/suzuki/Suzuki-GSXl.png',
         año:2023,
         tipo:'deportiva',
         clindraje:125,
@@ -34,7 +34,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //HAYABUSA 1300
         modelo:'HAYABUSA 1300',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/suzuki/Suzuki-Hayu.png',
         año:1999 ,
         tipo:'deportiva',
         clindraje:1340,
@@ -65,7 +65,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //SV 650 2023
         modelo:'SV 650',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/suzuki-SV 650 2023.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:645,
@@ -96,7 +96,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //SV650X 2023
         modelo:'SV650X',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/SV650X 2023.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:645,
@@ -127,7 +127,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //GSX-S1000 2023
         modelo:'GSX-S1000',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/GSX-S1000 2023.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:999,
@@ -158,7 +158,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //GSX-S125
         modelo:'GSX-S125',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/GSX-S125.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:125,
@@ -189,7 +189,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //KATANA
         modelo:'KATANA',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/katana.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:999,
@@ -220,7 +220,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //GSX-S950
         modelo:'GSX-S950',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/nakeds/suzuki/GSX-S950.jpg',
         año:2023 ,
         tipo:'naked',
         clindraje:999,
@@ -251,7 +251,7 @@ const motos = [
         // Simple description
         marca:'suzuki', //GSX-S1000 GT
         modelo:'GSX-S1000 GT',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/suzuki/Suzuki-GSX-S1000 GT.png',
         año:2015 ,
         tipo:'deportiva',
         clindraje:999,
@@ -283,7 +283,7 @@ const motos = [
         // Simple description
         marca:'kawasaki', //Ninja ZX-10RR
         modelo:'Ninja ZX-10RR',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/kawaski/NINJA ZX-10RR 2023.png',
         año:2010,
         tipo:'deportiva',
         clindraje:998,
@@ -314,7 +314,7 @@ const motos = [
         // Simple description 
         marca:'kawasaki', //NINJA ZX-10R
         modelo:'NINJA ZX-10R',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/kawaski/NINJA ZX-10R 2023.png',
         año:2017,
         tipo:'deportiva',
         clindraje:998,
@@ -345,7 +345,7 @@ const motos = [
         // Simple description
         marca:'kawasaki', //NINJA 650
         modelo:'NINJA 650',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/kawaski/NINJA 650 2023.png',
         año:2012,
         tipo:'deportiva',
         clindraje:649,
@@ -376,7 +376,7 @@ const motos = [
         // Simple description 
         marca:'kawasaki', //Ninja Z400
         modelo:'Ninja Z400',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/kawaski/NINJA 400 2023.png',
         año:2017,
         tipo:'deportiva',
         clindraje:399,
@@ -407,7 +407,7 @@ const motos = [
         // Simple description 
         marca:'kawasaki', //Ninja H2R
         modelo:'Ninja H2R',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/kawaski/NINJA H2R 2022.png',
         año:2022,
         tipo:'deportiva',
         clindraje:998,
@@ -470,7 +470,7 @@ const motos = [
         // Simple description 4
         marca:'bmw', //Ninja Z400
         modelo:'BMW S1000rr',
-        image:'../src/assets/images/deportivas/bmw/s100rr.jpg',
+        image:'../src/assets/images/deportivas/bmw/s1000r.jpg',
         año:2017,
         tipo:'deportiva',
         clindraje:399,
